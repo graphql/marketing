@@ -1,10 +1,10 @@
 # Marketing
 
-The GraphQL Foundation marketing committee is responsible for coordinating marketing activities in support of the [Foundation](https://foundation.graphql.org) and the [projects](https://github.com/graphql). We meet regularly, and welcome participation from Foundation and community members.
+The [GraphQL Foundation](https://graphq.org/foundation) Marketing Subcommittee, reconstituted in January 2023, plays a crucial role in orchestrating and executing marketing initiatives in support of the Foundation and its various projects. As part of the GraphQL Foundation Board's efforts, the Marketing Subcommittee collaborates with several other subcommittees, all dedicated to working on new and exciting projects planned for this year. Announcements about these programs and projects will be released throughout 2023.
 
-Our meeting agendas and minutes are open and available in [meetings/](./meetings/). We generally meet on the fourth Thursday of the month at 9a PT.
+The Marketing Subcommittee maintains transparency in its operations, making meeting agendas and minutes openly accessible in the meetings/ directory. Once our regular meetings are scheduled, this README will be updated with the dates and times along with adding them to the [Foundation's public calendar](https://calendar.google.com/calendar/u/0/embed?src=linuxfoundation.org_ik79t9uuj2p32i3r203dgv5mo8@group.calendar.google.com).
 
-To be added to the recurring invite, please contact [operations@graphql.org](mailto:operations@graphql.org).
+If you are interested in joining the GraphQL Foundation Marketing Subcommittee and would like to be included in the recurring meeting invitation, please reach out to operations@graphql.org.
 
 # Contributing to this repo
 
@@ -13,3 +13,5 @@ This repository is managed by EasyCLA. Project participants must sign the free (
 To initiate the signature process please open a PR against this repo. The EasyCLA bot will block the merge if we still need a membership agreement from you.
 
 You can find [detailed information here](https://github.com/graphql/graphql-wg/tree/main/membership). If you have issues, please email [operations@graphql.org](mailto:operations@graphql.org).
+
+[https://calendar.google.com/calendar/u/0/embed?src=linuxfoundation.org_ik79t9uuj2p32i3r203dgv5mo8@group.calendar.google.com]: https://calendar.google.com/calendar/u/0/embed?src=linuxfoundation.org_ik79t9uuj2p32i3r203dgv5mo8@group.calendar.google.com
