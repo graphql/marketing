@@ -1,0 +1,13 @@
+name: suggest
+description: make a suggestion for the marketing committee
+labels: "[Suggestion, Needs Review, From another committee]"
+body:
+- type: dropdown
+  id: committee_choice
+  attributes:
+    lable: If this suggestion is on behalf of another committee, which one?
+    options:
+      - GraphQLConf
+      - TWiG
+      - meetings    
+
