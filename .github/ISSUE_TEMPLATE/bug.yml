@@ -10,3 +10,11 @@ body:
     options:
       lable: I have searched existing issues
         required: true
+- type: dropdown
+  id: project_choice
+  attributes:
+    lable: For which project are you reporting this bug?
+    options:
+      - GraphQLConf
+      - TWiG
+      - meetings
