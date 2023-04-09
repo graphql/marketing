@@ -1,0 +1,12 @@
+name: bug
+description: file a bug/issue
+title: "[BUG] <title>"
+labels: [Bug, Needs Triage]
+body:
+- type: checkboxes
+  attributes:
+    lable: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the bug you found.
+    options:
+      lable: I have searched existing issues
+        required: true
