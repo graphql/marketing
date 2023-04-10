@@ -9,7 +9,8 @@ body:
     description: Please search to see if an issue already exists for the bug you found.
     options:
       lable: I have searched existing issues
-      required: true
+  validations:
+    required: true
 - type: dropdown
   id: project_choice
   attributes:
