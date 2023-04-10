@@ -14,11 +14,11 @@ The [assets](https://github.com/graphql/marketing/assets) directory contains mar
 
 ### Issues
 
-The [Issues](https://github.com/graphql/marketing/issues) section of the repository is used for tracking tasks, requests, and discussions related to marketing activities. Committee members can create new issues, assign them to collaborators, and track their progress.
+The [issues](https://github.com/graphql/marketing/issues) section of the repository is used for tracking tasks, requests, and discussions related to marketing activities. Committee members can create new issues, assign them to collaborators, and track their progress.
 
 ### Discussions
 
-The [Discussions](https://github.com/graphql/marketing/discussions) section serves as a platform for open conversations, brainstorming sessions, and knowledge sharing among marketing committee members and other stakeholders. Topics can range from campaign ideas to feedback on promotional materials.
+The [discussions](https://github.com/graphql/marketing/discussions) section serves as a platform for open conversations, brainstorming sessions, and knowledge sharing among marketing committee members and other stakeholders. Topics can range from campaign ideas to feedback on promotional materials.
 
 ## GraphQL Foundation Marketing Plan 2023
 
