@@ -6,11 +6,11 @@ This repository serves as a centralized platform for the marketing committee's e
 
 ### Marketing Planning
 
-The [plans](https://github.com/graphql/marketing/plans) directory contains documents and resources related to the overall marketing strategy and objectives for GraphQLConf. This includes target audiences, messaging, and channels.
+The [plans](https://github.com/graphql/marketing/tree/main/plans) directory contains documents and resources related to the overall marketing strategy and objectives for GraphQLConf. This includes target audiences, messaging, and channels.
 
 ### Artifacts
 
-The [assets](https://github.com/graphql/marketing/assets) directory contains marketing artifacts, such as graphics, banners, social media images, and other promotional materials that can be used across various platforms and channels.
+The [assets](https://github.com/graphql/marketing/tree/main/assets) directory contains marketing artifacts, such as graphics, banners, social media images, and other promotional materials that can be used across various platforms and channels.
 
 ### Issues
 
