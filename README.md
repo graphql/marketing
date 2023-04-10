@@ -1,6 +1,32 @@
-# Marketing
+# Marketing - DRAFT
 
-The [GraphQL Foundation](https://graphq.org/foundation) Marketing Subcommittee, reconstituted in January 2023, plays a crucial role in orchestrating and executing marketing initiatives in support of the Foundation and its various projects. As part of the GraphQL Foundation Board's efforts, the Marketing Subcommittee collaborates with several other subcommittees, all dedicated to working on new and exciting projects planned for this year. Announcements about these programs and projects will be released throughout 2023.
+The [GraphQL Foundation](https://graphq.org/foundation) Marketing Committee, reconstituted in January 2023, plays a crucial role in orchestrating and executing marketing initiatives in support of the Foundation and its various projects. As part of the GraphQL Foundation Board's efforts, the Marketing Subcommittee collaborates with several other subcommittees, all dedicated to working on new and exciting projects planned for this year. Announcements about these programs and projects will be released throughout 2023.
+
+This repository serves as a centralized platform for the marketing committee's efforts, including:
+
+### Marketing Planning
+
+The [plans](https://github.com/graphql/marketing/plans) directory contains documents and resources related to the overall marketing strategy and objectives for GraphQLConf. This includes target audiences, messaging, and channels.
+
+### Artifacts
+
+The [assets](https://github.com/graphql/marketing/assets) directory contains marketing artifacts, such as graphics, banners, social media images, and other promotional materials that can be used across various platforms and channels.
+
+### Issues
+
+The [Issues](https://github.com/graphql/marketing/issues) section of the repository is used for tracking tasks, requests, and discussions related to marketing activities. Committee members can create new issues, assign them to collaborators, and track their progress.
+
+### Discussions
+
+The [Discussions](https://github.com/graphql/marketing/discussions) section serves as a platform for open conversations, brainstorming sessions, and knowledge sharing among marketing committee members and other stakeholders. Topics can range from campaign ideas to feedback on promotional materials.
+
+## GraphQL Foundation Marketing Plan 2023
+
+For an overview of the GraphQL Foundation's marketing strategy and objectives for 2023, please refer to the [GraphQL Foundation Marketing Plan 2023](https://github.com/graphql/marketing/plans) document. This is an initial draft plan and outlines the goals, target audiences, and initiatives for promoting and expanding the GraphQL ecosystem throughout the year.
+
+## Contributing
+
+We welcome and appreciate contributions from the community! If you'd like to get involved with the marketing committee or have ideas to share, please feel free to open an issue, start a discussion, or submit a pull request.
 
 More details on new projects and programs for 2023 will be released soon. Watch this README for updates.
 
