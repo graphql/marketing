@@ -1,0 +1,1 @@
+# This file is a placeholder for images and other assets that will be available here soon.
