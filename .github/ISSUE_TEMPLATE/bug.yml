@@ -5,11 +5,11 @@ labels: [Bug, Needs Triage]
 
 body:
   - type: markdown
-      attributes:
-        value: |
-          ## Bug Report
+    attributes:
+      value: |
+        ## Bug Report
         
-          Thank you for reporting a bug! Please fill out the following template to help us better understand the issue and resolve it as quickly as possible.
+        Thank you for reporting a bug! Please fill out the following template to help us better understand the issue and resolve it as quickly as possible.
 
   - type: checkboxes
     attributes:
