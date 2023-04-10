@@ -1,22 +1,23 @@
 name: suggest
 description: Make a suggestion for the marketing committee
-labels: "[Suggestion, Needs Review, From another committee]"
+labels: ["Suggestion", "Needs Review", "From another committee"]
+
 body:
 - type: markdown
-    attributes:
-      value: |
-        ## Suggestion for improvement to a marketing or comms plan, program, etc.
-        
-        Thank you for reporting a bug! Please complete the follow template and provide as much detail as possible.
+  attributes:
+    value: |
+      ## Suggestion for improvement to a marketing or comms plan, program, etc.
+      
+      Thank you for making a suggestion! Please complete the following template and provide as much detail as possible.
 
-  - type: checkboxes
-    attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you found.
-      options:
-      - label: I have searched existing issues
-    validations:
-      required: true
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the suggestion you have.
+    options:
+    - label: I have searched existing issues
+  validations:
+    required: true
 
 - type: dropdown
   id: committee_choice
@@ -27,6 +28,6 @@ body:
       - TWiG
       - meetings    
 
-  - type: textarea
-    attributes:
-      label: Provide a detailed description of your suggestion for improvement(s).
+- type: textarea
+  attributes:
+    label: Provide a detailed description of your suggestion for improvement(s).
