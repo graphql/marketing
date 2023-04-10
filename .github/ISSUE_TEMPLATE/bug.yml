@@ -16,7 +16,7 @@ body:
       lable: Is there an existing issue for this?
       description: Please search to see if an issue already exists for the bug you found.
       options:
-        lable: I have searched existing issues
+      - lable: I have searched existing issues
     validations:
       required: true
 
