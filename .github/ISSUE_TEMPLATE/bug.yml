@@ -13,17 +13,17 @@ body:
 
   - type: checkboxes
     attributes:
-      lable: Is there an existing issue for this?
+      label: Is there an existing issue for this?
       description: Please search to see if an issue already exists for the bug you found.
       options:
-      - lable: I have searched existing issues
+      - label: I have searched existing issues
     validations:
       required: true
 
   - type: dropdown
     id: project_choice
     attributes:
-      lable: For which project are you reporting this bug?
+      label: For which project are you reporting this bug?
       options:
         - GraphQLConf
         - TWiG
