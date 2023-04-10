@@ -22,7 +22,7 @@ The [Discussions](https://github.com/graphql/marketing/discussions) section serv
 
 ## GraphQL Foundation Marketing Plan 2023
 
-For an overview of the GraphQL Foundation's marketing strategy and objectives for 2023, please refer to the [GraphQL Foundation Marketing Plan 2023](https://github.com/graphql/marketing/plans) document. This is an initial draft plan and outlines the goals, target audiences, and initiatives for promoting and expanding the GraphQL ecosystem throughout the year.
+For an overview of the GraphQL Foundation's marketing strategy and objectives for 2023, please refer to the [GraphQL Foundation Marketing Plan 2023](https://github.com/graphql/marketing/blob/main/plans/2023_marketing.md) document. This is an initial draft plan and outlines the goals, target audiences, and initiatives for promoting and expanding the GraphQL ecosystem throughout the year.
 
 ## Contributing
 
