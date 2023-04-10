@@ -5,7 +5,7 @@ body:
 - type: dropdown
   id: committee_choice
   attributes:
-    lable: If this suggestion is on behalf of another committee, which one?
+    label: If this suggestion is on behalf of another committee, which one?
     options:
       - GraphQLConf
       - TWiG
