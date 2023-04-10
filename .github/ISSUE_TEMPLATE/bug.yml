@@ -38,3 +38,6 @@ body:
         - TWiG
         - meetings
         - Graph Traversal
+  - type: textarea
+    attributes:
+      label: Bug Description
