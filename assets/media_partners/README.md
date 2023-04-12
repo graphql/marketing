@@ -1,4 +1,4 @@
-# Media Partners Brand Assests
+# Media Partners Brand Assets
 
 ### This folder is where you will upload your preferred brand assets to be featured on GraphQLConf materials.
 
