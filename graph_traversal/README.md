@@ -2,6 +2,7 @@
 
 ## The Official Live Stream from the GraphQL Foundation
 
+### Purpose
 Graph Traversal aims to spread awareness about the GraphQL Foundation's work by featuring interviews, demos, and discussions with committee members and others from the broader ecosystem. We are exploring different methods of live streaming to promote various Foundation activities, such as GraphQLConf, TWiG, graphql.org, and the grants program.
 
 ### Tools
