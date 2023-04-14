@@ -32,6 +32,20 @@ More details on new projects and programs for 2023 will be released soon. Watch 
 
 The Marketing Committee maintains transparency in its operations, making meeting agendas and minutes openly accessible in the meetings/ directory. Once our regular meetings are scheduled, this README will be updated with the dates and times along with adding them to the [Foundation's public calendar](https://calendar.google.com/calendar/u/0/embed?src=linuxfoundation.org_ik79t9uuj2p32i3r203dgv5mo8@group.calendar.google.com).
 
+## Meetings
+
+| Meeting	 |   Time   |   Host   |
+| ---------- | -------- | -------- |
+| Marketing  | Weekly Tue, 11:30am - 12:30pm EDT |  Doc Jones     |
+
+Check the meeting time in [your timezone](https://everytimezone.com/s/390feace)
+
+This will be the 1st meeting of the Marketing Committee. Meeting will recur on the same day/time until at least June 2023.Follow directions for attending.
+
+Meetings are typically scheduled at the times listed, however always check the agenda for the exact date and time of an upcoming meeting. Keep track of future upcoming meetings by subscribing to the Google Calendar or ical.
+
+Meeting transcripts and summaries will be captured by an automated note taker. Summaries will be made available in the meetings directory of this repository immediately following each meeting.
+
 # Contributing to this repo
 
 This repository is managed by EasyCLA. Project participants must sign the free [GraphQL Specification Membership agreement](https://preview-spec-membership.graphql.org) before making a contribution. You only need to do this one time, and it can be signed by [individual contributors](http://individual-spec-membership.graphql.org/) or their [employers](http://corporate-spec-membership.graphql.org/).
