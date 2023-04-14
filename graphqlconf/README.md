@@ -12,6 +12,8 @@ The marketing committee is dedicated to promoting and supporting the conference 
 - Creating marketing materials and promotional assets
 - Planning and executing marketing campaigns
 - Recruiting and collaborating with partners
+    - Partners include media partners and community partners
+    - Others
 - Engaging with the community committee to increase awareness and recruit speakers and attendees
 - Coordinating with speakers and other stakeholders
 
