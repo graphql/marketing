@@ -1,4 +1,4 @@
-# Community Partner Assets
+# GraphQLConf Brand Assets for use by Media and Community Partners
 
 This folder contains a collection of assets that can be used by community partners to promote events and activities on their Meetup pages, newsletters or other websites.
 
