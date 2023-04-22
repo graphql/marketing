@@ -7,20 +7,22 @@ We are pleased to offer a Media and Community Partner Program for our upcoming t
 ## Benefits for Media Partners
 As a media partner, you will receive the following benefits:
 
-- Complimentary access to the conference
-- Access to interview conference speakers and attendees
-- Early access to conference news and updates
-- Recognition on the conference website and promotional materials
-- Opportunity to contribute to conference content and speaker panels
+- Logo on our GraphQLConf 2023 event websites
+- 20% registration discount code for your readers/members
+- Complimentary media passes upon request
+- Recognition in GraphQL Foundation Newsletter
+- Promotion of partnership on social channels
+- Access and booking assistance with the event’s sponsors
+- Your company name and contact information to the event’s Diamond Sponsors
 
 ## Benefits for Community Partners
 As a community partner, you will receive the following benefits:
 
-- Discounted access to the conference
-- Recognition on the conference website and promotional materials
-- Opportunity to contribute to conference content and speaker panels
-- Invitation to attend a special community partner event during the conference
-- Access to promotional materials for use in your own marketing efforts
+- Logo on our GraphQLConf 2023 event website
+- Promotion of partnership on social channels
+- 20% registration discount code for your community
+- Collateral distribution on shared table in sponsor showcase
+- (1) Complimentary conference attendee pass
 
 ## Obligations for Media and Community Partners
 In exchange for these benefits, media and community partners are expected to fulfill the following obligations:
