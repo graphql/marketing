@@ -1,4 +1,4 @@
-# Media and Community Partner Program for GraphQLConf - DRAFT
+# Media and Community Partner Program for GraphQLConf
 
 NOTE: The GraphQL Foundation Community Comittee will approve or offer change to the guidance below. WiP
 
