@@ -2,7 +2,7 @@
 
 NOTE: The GraphQL Foundation Community Comittee will approve or offer change to the guidance below. WiP
 
-We are pleased to offer a Media and Community Partner Program for our upcoming tech conference. Our program is designed to provide benefits to media and community partners, while also ensuring that our conference is promoted in a positive and appropriate way.
+We are pleased to offer a Media and Community Partner Program for our upcoming GraphQLConf 2023. Our program is designed to provide benefits to media and community partners, while also ensuring that our conference is promoted in a positive and appropriate way.
 
 ## Benefits for Media Partners
 As a media partner, you will receive the following benefits:
