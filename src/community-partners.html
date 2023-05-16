@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" >
+    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Apply to GraphQLConf Community Partner Program</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="app" class="columns container my-2">
+        <div class="column is-half is-offset-one-quarter">
+            <h1 class="title">Apply to GraphQLConf Community Partner Program</h1>
+
+            <p>Thank you for your interest in becoming a community partner for GraphQLConf, a premier technology conference dedicated to GraphQL and related technologies. Community partners are essential for spreading the word about the conference and supporting our mission to bring together the global GraphQL community. Please fill out this form to apply as a community partner for GraphQLConf. We will review your application and get back to you as soon as possible.</p>
+            <br />
+             <p>Please indicate whether your organization is a member of the GraphQL Meetup Pro Network</p>
+            <br />
+
+            <div class="field">
+                <label class="label" for="proNetwork">GraphQL Meetup Pro Network:</label>
+                <div class="control">
+                    <input type="checkbox" name="proNetworkYes" value="proNetworkYes" v-model="proNetworkYes"> Yes<br>
+                    <input type="checkbox" name="proNetworkNo" value="proNetworkNo" v-model="proNetworkNo"> No<br>
+                    <span class="error" v-if="!proNetworkYes && !proNetworkNo && attemptingSubmission">Please select an option.</span>
+                </div>
+            </div>
+            <br />
+            
+            <div class="field">
+                <p>Please provide the full name of your organization.</p>
+                <label class="label" for="fullname">Organization Name:</label>
+                <div class="control">
+                    <input name="fullname" class="input" type="text" v-model="fullname">
+                    <span class="error" v-if="!fullname && attemptingSubmission">Organization Name is required.</span>
+                </div>
+            </div>
+            <br />
+
+            <div class="field">
+                <p>Please provide the URL of your organization’s website or Meetup page.</p>
+                <label class="label" for="orgUrl">Website or Meetup Page URL</label>
+                <div class="control">
+                    <input name="orgUrl" class="input" type="email" v-model="orgUrl">
+                    <span class="error" v-if="!orgUrl && attemptingSubmission">Email Address is required.</span>
+                </div>
+            </div>
+            <br />
+
+            <div class="field">
+                <p>Provide the full name of the primary contact person for your organization.</p>
+                <label class="label" for="contactPerson">Contact Person Name</label>
+                <div class="control">
+                    <input name="contactPerson" class="input" type="text" v-model="contactPerson">
+                    <span class="error" v-if="!contactPerson && attemptingSubmission">Mobile Number is required.</span>
+                </div>
+            </div>
+            <br />
+
+            <div class="field">
+                <p>Provide the email address of the primary contact person for your organization.</p>
+                <label class="label" for="contactEmail">Contact Email</label>
+                <div class="control">
+                    <input name="contactEmail" class="input" type="text" v-model="contactEmail">
+                    <span class="error" v-if="!contactEmail && attemptingSubmission">Organization Name is required.</span>
+                </div>
+            </div>
+            <br />
+
+            <div class="field">
+                <p>Provide the phone number of the primary contact person for your organization.</p>
+                <label class="label" for="contactPhone">Contact Phone Number</label>
+                <div class="control">
+                    <input name="contactPhone" class="input" type="text" v-model="contactPhone">
+                    <span class="error" v-if="!contactPhone && attemptingSubmission">Website or Meetup Page URL is required.</span>
+                </div>
+            </div>
+            <br />
+
+            <div class="field">
+                <p>Please give a brief description of your organization, its mission, and its activities.</p>
+                <label class="label" for="orgDescription">Organization Description <span class="counter">({{orgDescription.length}}/500)</span></label>
+                <div class="control">
+                    <textarea name="orgDescription" class="textarea" v-model="orgDescription" maxlength="500"></textarea>
+                    <span class="error" v-if="!orgDescription && attemptingSubmission">Website or Meetup Page URL is required.</span>
+                </div>
+            </div>
+            <br />
+
+            <div class="field">
+                <p>Please describe the activities and contributions your organization plans to make as a community partner for GraphQLConf. Examples include promoting the event, organizing local meetups or workshops, or providing resources to attendees.</p>
+                <label class="label" for="partnershipActivity">Proposed Partnership Activities</label>
+                <div class="control">
+                    <textarea class="textarea" name="partnershipActivity" v-model="partnershipActivity"></textarea>
+                    <span class="error" v-if="!partnershipActivity && attemptingSubmission">This field is required.</span>
+                </div>
+            </div>
+            <br />
+
+            <div class="field">
+                <p>Please provide the social media handles for your organization on Twitter, Facebook, LinkedIn, Instagram, and any other relevant platforms.</p>
+                <label class="label" for="socialMediaHandle">Social Media Handles</label>
+                <div class="control">
+                    <textarea class="textarea" name="reason" v-model="socialMediaHandle"></textarea>
+                    <span class="error" v-if="!socialMediaHandle && attemptingSubmission">This field is required.</span>
+                </div>
+            </div>
+            <br />
+
+            <div class="field">
+                <p>If you have any additional comments or information you would like to share, please provide them here.</p>
+                <label class="label" for="comments">Additional Comments <span class="counter">({{comments.length}}/500)</span></label>
+                <div class="control">
+                    <textarea class="textarea" name="comments" v-model="comments" maxlength="500"></textarea>
+                    <span class="error" v-if="!comments && attemptingSubmission">This field is required.</span>
+                </div>
+            </div>
+            
+            <br />
+            
+            <div class="control">
+                <button @click="submitForm" class="button is-link is-fullwidth">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const { createApp } = Vue;
+
+    const App = {
+        data(){
+            return {
+                proNetworkYes: false,
+                proNetworkNo: false,
+                fullname: '',
+                orgUrl: '',
+                contactPerson: '',
+                contactEmail: '',
+                contactPhone: '',
+                orgDescription: '',
+                partnershipActivity: '',
+                socialMediaHandle: '',
+                comments: '',
+                attemptingSubmission: false,
+            }
+        },
+
+        computed: {
+            isProNetworkSelected(){
+                return this.proNetworkYes || this.proNetworkNo;
+            }
+        },
+
+        methods: {
+            submitForm() {
+                this.attemptingSubmission = true;
+
+                const isFormValidated = this.validateForm();
+
+                if(isFormValidated){
+                    const { encodedFileText, filename } = this.generatePRFile('media');
+        
+                    //Generate a github link with query parameter
+                    const githubQueryLink = `https://github.com/graphql/marketing/new/main/graphqlconf/applications?value=${encodedFileText}&filename=${filename}`
+    
+                    //Open in a new tab
+                    window.open(githubQueryLink);
+                    console.log("Form submitted successfully!");
+                }
+            },
+
+            generatePRFile(){
+                //generate a filename
+                const filename = this.fullname.replace(/\s/g, '-') + ".md";
+
+                let prFile = "";
+                prFile += "## Application for GraphQLConf 2023 Community Partner\n";
+                prFile += "---\n";
+                prFile += "**GraphQL Meetup Pro Network: **" + "\n";
+                prFile += `     [${this.proNetworkYes ? '*': ''}] Yes: ` + "\n";
+                prFile += `     [${this.proNetworkNo ? '*': ''}] No: ` + "\n\n";
+                prFile += "**Full Name: **" + this.fullname + "\n\n";
+                prFile += "**Organization URL: **" + this.orgUrl + "\n\n";
+                prFile += "**Contact Person Name: **" + this.contactPerson + "\n\n";
+                prFile += "**Contact Email: **" + this.contactEmail + "\n\n";
+                prFile += "**Contact Phone Number: **" + this.contactPhone + "\n\n";
+                prFile += "**Organization Description: **" + this.orgDescription + "\n\n";
+                prFile += "**Proposed Partnership Activities: **" + this.partnershipActivity + "\n\n";
+                prFile += "**Social Media Handles: **" + this.socialMediaHandle + "\n\n";
+                prFile += "**Additional Comments: **" + this.comments + "\n\n";
+                prFile += "---\n\n";
+
+                //Encode string to URI format
+                const encodedFileText = encodeURIComponent(prFile)
+                return { encodedFileText, filename };
+
+                console.log(prFile);
+            },
+
+            validateForm(){
+                if(
+                    this.fullname &&
+                    this.orgUrl &&
+                    this.contactPerson &&
+                    this.contactEmail &&
+                    this.contactPhone &&
+                    this.orgDescription &&
+                    this.partnershipActivity &&
+                    this.socialMediaHandle &&
+                    this.comments &&
+                    this.isProNetworkSelected
+                ){
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        },
+
+        created(){},
+    }
+
+    const app = createApp(App);
+    app.mount("#app");
+</script>
+</html>
