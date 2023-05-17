@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" >
+    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Apply to GraphQLConf Media Partner Program</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="app" class="columns container my-2">
+        <div class="column is-half is-offset-one-quarter">
+            <h1 class="title">Apply to GraphQLConf Media Partner Program</h1>
+
+            <p>Welcome to the GraphQLConf Media Partners Application! We’re excited to collaborate with media organizations and influencers who share our passion for GraphQL and technology. Please fill out the form below to apply as a media partner for the upcoming GraphQLConf. We’ll review your application and get back to you as soon as possible.</p>
+            <br />
+        
+            <div class="field">
+                <label class="label" for="fullname">Full Name</label>
+                <div class="control">
+                    <input name="fullname" class="input" type="text" v-model="fullname">
+                    <span class="error" v-if="!fullname && attemptingSubmission">Full Name is required.</span>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="url">Email Address</label>
+                <div class="control">
+                    <input name="email" class="input" type="text" v-model="email">
+                    <span class="error" v-if="!email && attemptingSubmission">Email is required.</span>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="author">Phone Number</label>
+                <div class="control">
+                    <input class="input" type="text" name="mobile" v-model="mobile">
+                    <span class="error" v-if="!mobile && attemptingSubmission">Phone Number is required.</span>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="orgName">Media Organization/Influencer Name</label>
+                <div class="control">
+                    <input class="input" type="text" name="orgName" v-model="orgName">
+                    <span class="error" v-if="!orgName && attemptingSubmission">Media Organization/Influencer Name is required.</span>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="website">Website or Social Media Link(s)</label>
+                <div class="control">
+                    <input class="input" type="text" name="website" v-model="website">
+                    <span class="error" v-if="!website && attemptingSubmission">Website or Social Media Link(s) is required.</span>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="orgName">Type of media platform (Select all that apply):</label>
+                <div class="control">
+                    <input type="checkbox" name="blog" value="blog" v-model="blog"> Blog<br>
+                    <input type="checkbox" name="podcast" value="podcast" v-model="podcast"> Podcast<br>
+                    <input type="checkbox" name="youtube" value="youtube" v-model="youtube"> YouTube Channel<br>
+                    <input type="checkbox" name="news" value="news" v-model="news"> News Website<br>
+                    <input type="checkbox" name="magazine" value="magazine" v-model="magazine"> Magazine<br>
+                    <input type="checkbox" name="socialMedia" value="socialMedia" v-model="socialMedia"> Social Media (Twitter, Facebook, LinkedIn, Instagram, etc)<br>
+                    <input type="checkbox" name="other" value="other" v-model="other"> Other<br>
+                    <span class="error" v-if="!blog && !podcast && !youtube && !news && !magazine && !socialMedia && !other && attemptingSubmission">Type of media platform is required.</span>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="field">
+                <label class="label" for="description">Brief Description of your Media Platform <span class="counter">({{description.length}}/500)</span></label>
+                <div class="control">
+                    <textarea class="textarea" name="description" v-model="description" maxlength="500"></textarea>
+                    <span class="error" v-if="!description && attemptingSubmission">This field is required.</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="demographics">Audience Demographics and Reach (approximate numbers)</label>
+                <div class="control">
+                    <textarea class="textarea" name="demographics" v-model="demographics"></textarea>
+                    <span class="error" v-if="!demographics && attemptingSubmission">This field is required.</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="reason">Why do you want to become a media partner for GraphQLConf? <span class="counter">({{reason.length}}/300)</span></label>
+                <div class="control">
+                    <textarea class="textarea" name="reason" v-model="reason"></textarea>
+                    <span class="error" v-if="!reason && attemptingSubmission" maxlength="300">This field is required.</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="contribution">How do you plan to contribute to the conference and promote GraphQLConf through your platform? <span class="counter">({{contribution.length}}/500)</span></label>
+                <div class="control">
+                    <textarea class="textarea" name="contribution" v-model="contribution" maxlength="500"></textarea>
+                    <span class="error" v-if="!contribution && attemptingSubmission">This field is required.</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="comments">Additional Comments or Questions:</label>
+                <div class="control">
+                    <textarea class="textarea" name="comments" v-model="comments"></textarea>
+                    <span class="error" v-if="!comments && attemptingSubmission">This field is required.</span>
+                </div>
+            </div>
+
+            <br />
+            
+            <div class="control">
+                <button @click="submitForm" class="button is-link is-fullwidth">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const { createApp } = Vue;
+
+    const App = {
+        data(){
+            return {
+                proNetworkYes: false,
+                proNetworkNo: false,
+                fullname: "",
+                email: "",
+                mobile: "",
+                orgName: "",
+                website: "",
+                blog: false,
+                podcast: false,
+                youtube: false,
+                news: false,
+                magazine: false,
+                socialMedia: false,
+                other: false,
+                description: "",
+                demographics: "",
+                reason: "",
+                contribution: "",
+                comments: "",
+                attemptingSubmission: false,
+            }
+        },
+        computed: {
+            isMediaPlatformSelected(){
+                return this.blog || this.podcast || this.youtube || this.news || this.magazine || this.socialMedia || this.other;
+            }
+        },
+        
+        methods: {
+            submitForm() {
+                this.attemptingSubmission = true;
+
+                const isFormValidated = this.validateForm();
+
+                if(isFormValidated){
+                    const { encodedFileText, filename } = this.generatePRFile('media');
+        
+                    //Generate a github link with query parameter
+                    const githubQueryLink = `https://github.com/graphql/marketing/new/main/graphqlconf/partners/media_appls?value=${encodedFileText}&filename=${filename}`
+    
+                    //Open in a new tab
+                    window.open(githubQueryLink);
+                    console.log("Form submitted successfully!");
+                }
+            },
+
+            generatePRFile(){
+                //generate a filename
+                const filename = this.fullname.replace(/\s/g, '-') + ".md";
+
+                let prFile = "";
+                prFile += "## Application for GraphQLConf 2023 Media Partner\n";
+                prFile += "---\n";
+                prFile += "**Full Name: **" + filename + "\n\n";
+                prFile += "**Email Address: **" + this.email + "\n\n";
+                prFile += "**Phone Number: **" + this.mobile + "\n\n";
+                prFile += "**Media Organization/Influencer Name: **" + this.orgName + "\n\n";
+                prFile += "**Website or Social Media Link(s): **" + this.website + "\n\n";
+                prFile += "**Type of media platform (Select all that apply): **" + "\n\n";
+                prFile += `     [${this.blog ? '*': ''}] Blog: ` + "\n";
+                prFile += `     [${this.podcast ? '*': ''}] Podcast: ` + "\n";
+                prFile += `     [${this.youtube ? '*': ''}] YouTube Channel: ` + "\n";
+                prFile += `     [${this.news ? '*': ''}] News Website: ` + "\n";
+                prFile += `     [${this.magazine ? '*': ''}] Magazine: ` + "\n";
+                prFile += `     [${this.socialMedia ? '*': ''}] Social Media (Twitter, Facebook, LinkedIn, Instagram, etc): ` + "\n";
+                prFile += `     [${this.other ? '*': ''}] Other: ` + "\n";
+                prFile += "**Brief Description of your Media Platform: **" + this.description + "\n\n";
+                prFile += "**Audience Demographics and Reach (approximate numbers): **" + this.demographics + "\n\n";
+                prFile += "**Why do you want to become a media partner for GraphQLConf?: **" + this.reason + "\n\n";
+                prFile += "**How do you plan to contribute to the conference and promote GraphQLConf through your platform?: **" + this.contribution + "\n\n";
+                prFile += "**Additional Comments or Questions: **" + this.comments + "\n\n";
+                prFile += "---\n\n";
+
+                //Encode string to URI format
+                const encodedFileText = encodeURIComponent(prFile)
+                return { encodedFileText, filename };
+
+                console.log(prFile);
+            },
+
+            validateForm(){
+                if(
+                    this.fullname &&
+                    this.email &&
+                    this.mobile &&
+                    this.orgName &&
+                    this.website &&
+                    this.description &&
+                    this.demographics &&
+                    this.reason &&
+                    this.contribution &&
+                    this.comments &&
+                    this.isMediaPlatformSelected
+                ){
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        },
+    }
+
+    const app = createApp(App);
+    app.mount("#app");
+</script>
+</html>

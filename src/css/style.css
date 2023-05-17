@@ -1,0 +1,29 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    background-color: #fff;
+    color: #202020;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28.8px;
+}
+button {
+    background: #e10098!important;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.title {
+    color:#e10098;
+}
+
+.error {
+    color: rgb(247, 62, 62);
+    font-size: 15px;
+}
+
+.counter{
+    font-size: 14px;
+    font-weight: 400;
+}
