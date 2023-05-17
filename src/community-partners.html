@@ -181,18 +181,18 @@
                 let prFile = "";
                 prFile += "## Application for GraphQLConf 2023 Community Partner\n";
                 prFile += "---\n";
-                prFile += "**GraphQL Meetup Pro Network: **" + "\n";
-                prFile += `     [${this.proNetworkYes ? '*': ''}] Yes: ` + "\n";
-                prFile += `     [${this.proNetworkNo ? '*': ''}] No: ` + "\n\n";
-                prFile += "**Full Name: **" + this.fullname + "\n\n";
-                prFile += "**Organization URL: **" + this.orgUrl + "\n\n";
-                prFile += "**Contact Person Name: **" + this.contactPerson + "\n\n";
-                prFile += "**Contact Email: **" + this.contactEmail + "\n\n";
-                prFile += "**Contact Phone Number: **" + this.contactPhone + "\n\n";
-                prFile += "**Organization Description: **" + this.orgDescription + "\n\n";
-                prFile += "**Proposed Partnership Activities: **" + this.partnershipActivity + "\n\n";
-                prFile += "**Social Media Handles: **" + this.socialMediaHandle + "\n\n";
-                prFile += "**Additional Comments: **" + this.comments + "\n\n";
+                prFile += "**GraphQL Meetup Pro Network:** " + "\n";
+                prFile += `- [${this.proNetworkYes ? 'x': ' '}] Yes: ` + "\n";
+                prFile += `- [${this.proNetworkNo ? 'x': ' '}] No: ` + "\n\n";
+                prFile += "**Full Name:** " + this.fullname + "\n\n";
+                prFile += "**Organization URL:** " + this.orgUrl + "\n\n";
+                prFile += "**Contact Person Name:** " + this.contactPerson + "\n\n";
+                prFile += "**Contact Email:** " + this.contactEmail + "\n\n";
+                prFile += "**Contact Phone Number:** " + this.contactPhone + "\n\n";
+                prFile += "**Organization Description:** " + this.orgDescription + "\n\n";
+                prFile += "**Proposed Partnership Activities:** " + this.partnershipActivity + "\n\n";
+                prFile += "**Social Media Handles:** " + this.socialMediaHandle + "\n\n";
+                prFile += "**Additional Comments:** " + this.comments + "\n\n";
                 prFile += "---\n\n";
 
                 //Encode string to URI format
